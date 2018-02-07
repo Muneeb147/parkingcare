@@ -7,7 +7,7 @@
     "start": "echo START && npm install && node server.js",
     "build": "NODE_ENV=production && ng build --aot --prod && ",
     "preinstall": "echo PREINSTALL",
-    "postinstall": "ng build --aot --prod"
+    "postinstall": "HOME=/ ./node_modules/@angular/cli/bin/ng build --prod --aot"
   },
   "engines": {
     "node": "v9.4.0",
